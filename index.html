@@ -13,14 +13,14 @@
         <script defer src="./index.js"></script>
         <title>Frontend Mentor | Tip calculator app</title>
     </head>
-    <body>
-        <header class="header">
-            <img src="./assets/images/logo.svg" alt="" />
+    <body class="grid">
+        <header class="grid" data-content="center">
+            <img src="./assets/images/logo.svg" alt="splitter" />
         </header>
 
-        <main class="wrapper">
-            <form novalidate class="tip-calculator">
-                <div class="form-group">
+        <main class="tip-calc grid">
+            <form novalidate class="tip-calc__form grid">
+                <div class="form-group grid">
                     <label for="bill-amount">Bill</label>
                     <span class="error"></span>
                     <input
@@ -111,7 +111,7 @@
                     />
                 </fieldset>
 
-                <div class="form-group">
+                <div class="form-group grid">
                     <label for="people-amount">Number of People</label>
                     <span class="error"></span>
                     <input
@@ -125,8 +125,8 @@
                 </div>
             </form>
 
-            <div class="tip-result">
-                <div class="results-wrapper">
+            <div class="tip-calc__result-card grid">
+                <div class="result-card__content-wrapper grid">
                     <div class="flex-group">
                         <p>
                             Tip Amount<span class="d-block accent-text"
