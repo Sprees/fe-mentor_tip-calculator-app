@@ -170,6 +170,8 @@ function resetAll() {
   tipResult.textContent = "$0.00";
   customPercent.classList.remove("selected");
   resetBtn.disabled = true;
+  checkError(billAmount);
+  checkError(peopleAmount);
 }
 
 function resetTotals() {
