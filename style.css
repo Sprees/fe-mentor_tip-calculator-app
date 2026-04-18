@@ -305,6 +305,9 @@ body {
 }
 
 @media (min-width: 1000px) {
+    header {
+        padding-block-end: 6rem;
+    }
     .tip-calc {
         gap: 3rem;
         /*width: fit-content;*/
