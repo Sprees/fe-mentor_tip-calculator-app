@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Submission]()
+- Solution URL: [Frontend Mentor Solution Submission](https://www.frontendmentor.io/solutions/tip-calculator-app-modern-css-grid-vanilla-js-GM6jd4XOB7)
 - Live Site URL: [Github Pages](https://sprees.github.io/fe-mentor_tip-calculator-app/)
 
 ## My process
