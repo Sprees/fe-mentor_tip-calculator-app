@@ -310,7 +310,6 @@ body {
     }
     .tip-calc {
         gap: 3rem;
-        /*width: fit-content;*/
         min-width: 720px;
         min-width: 920px;
         grid-template-columns: 1fr 1fr;

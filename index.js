@@ -20,8 +20,11 @@ const listeners = {
     },
     focus: (e) => setCursorToEnd(e.target),
     input: (e) => {
-      e.target.value = removeNaN(e.target.value);
-      e.target.value = formatter(e.target.value / 100);
+      let value = removeNaN(e.target.value);
+      if (value) {
+        const dollars = parseFloat(value) / 100;
+        e.target.value = formatter(dollars);
+      }
       setCursorToEnd(e.target);
       checkError(e.target);
     },
@@ -58,7 +61,7 @@ const listeners = {
     },
   },
   "input[type='radio']": {
-    change: (e) => {
+    change: () => {
       customPercent.classList.remove("selected");
       customPercent.value = "";
     },
@@ -101,7 +104,7 @@ function submit() {
     : parseInt(removeNaN(customPercent.value));
 
   const result = splitTip(
-    parseFloat(billAmount.value),
+    parseFloat(billAmount.value.replace(/[^0-9.]/g, "")) || 0,
     percentage,
     parseInt(peopleAmount.value),
   );
